@@ -1,0 +1,68 @@
+/*###################
+    Global styles
+  ###################*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+p{
+    font-size: 15px;
+}
+
+
+/*############
+    Layout
+  ############*/
+
+main{
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.qr-card{
+    max-width: 320px;
+    height: 490px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.125);
+}
+
+.img-container{
+    width: 290px;
+    height: 290px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.img-container > img{
+    width: 100%;
+}
+
+.text-container > h1, .text-container > p{
+    text-align: center;
+    padding: 10px 15px;
+}
+.text-container > h1{
+    color: var(--dark-blue);
+    font-size: 1.3em;
+}
+.text-container > p{
+    color: var(--grayish-blue);
+}
+
